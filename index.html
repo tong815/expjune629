@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Middle School Difficult Math Question</title>
+  <title>Stage II Topic Categories</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="quiz-card">
+  <main class="app">
     <p class="mode-label">Middle School Difficult Mode</p>
-    <h1>Grade 7 Math Question</h1>
+    <h1>Grade 7 Topic Practice</h1>
 
-    <section class="question-box" aria-labelledby="question-title">
-      <h2 id="question-title">What is 3/4 + 1/8?</h2>
-
-      <div class="answers" id="answers">
-        <button type="button" class="answer-button" data-answer="4/12">4/12</button>
-        <button type="button" class="answer-button" data-answer="7/8">7/8</button>
-        <button type="button" class="answer-button" data-answer="5/8">5/8</button>
-        <button type="button" class="answer-button" data-answer="1/2">1/2</button>
-      </div>
+    <section id="topic-screen" class="screen">
+      <p class="instruction">Choose a topic. Each topic has a short list of questions.</p>
+      <div id="topic-list" class="topic-list"></div>
     </section>
 
-    <section class="feedback" id="feedback" aria-live="polite"></section>
+    <section id="question-screen" class="screen hidden">
+      <button type="button" id="back-button" class="text-button">Back to Topics</button>
 
-    <button type="button" class="reset-button" id="reset-button">Reset</button>
+      <p id="topic-name" class="topic-name"></p>
+      <p id="question-count" class="question-count"></p>
+      <h2 id="question-text"></h2>
+
+      <div id="answer-list" class="answer-list"></div>
+
+      <section id="feedback" class="feedback" aria-live="polite"></section>
+
+      <button type="button" id="next-button" class="next-button" disabled>Next Question</button>
+    </section>
   </main>
 
   <script src="app.js"></script>
