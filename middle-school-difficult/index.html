@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Middle School Difficult Math Question</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-card">
+    <p class="mode-label">Middle School Difficult Mode</p>
+    <h1>Grade 7 Math Question</h1>
+
+    <section class="question-box" aria-labelledby="question-title">
+      <h2 id="question-title">What is 3/4 + 1/8?</h2>
+
+      <div class="answers" id="answers">
+        <button type="button" class="answer-button" data-answer="4/12">4/12</button>
+        <button type="button" class="answer-button" data-answer="7/8">7/8</button>
+        <button type="button" class="answer-button" data-answer="5/8">5/8</button>
+        <button type="button" class="answer-button" data-answer="1/2">1/2</button>
+      </div>
+    </section>
+
+    <section class="feedback" id="feedback" aria-live="polite"></section>
+
+    <button type="button" class="reset-button" id="reset-button">Reset</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
