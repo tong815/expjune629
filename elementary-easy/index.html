@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementary Easy Math Question</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-card">
+    <p class="mode-label">Elementary Easy Mode</p>
+    <h1>Math Question</h1>
+
+    <section class="question-box" aria-labelledby="question-title">
+      <h2 id="question-title">What is 6 + 4?</h2>
+
+      <div class="answers" id="answers">
+        <button type="button" class="answer-button" data-answer="8">8</button>
+        <button type="button" class="answer-button" data-answer="9">9</button>
+        <button type="button" class="answer-button" data-answer="10">10</button>
+        <button type="button" class="answer-button" data-answer="11">11</button>
+      </div>
+    </section>
+
+    <section class="feedback" id="feedback" aria-live="polite"></section>
+
+    <button type="button" class="reset-button" id="reset-button">Try Again</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
